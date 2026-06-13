@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ПроВент — монтаж вентиляции и дымоходов под ключ. Акт ВДПО, протокол заземления для газовой службы. Лицензия МЧС. Южное Подмосковье.">
+  <meta name="keywords" content="акт ВДПО, дымоход, вентиляция, заземление, газовая служба, южное Подмосковье">
+  <title>ПроВент — монтаж вентиляции и дымоходов | Акт ВДПО и заземление</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230c4a6e' width='100' height='100' rx='20'/><text y='68' x='50' text-anchor='middle' font-size='52' fill='%23f97316'>П</text></svg>">
+</head>
+<body>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__text">Про<span class="logo__accent">Вент</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#documents" class="nav__link">Документы</a></li>
+          <li><a href="#partners" class="nav__link">Партнёрам</a></li>
+          <li><a href="#faq" class="nav__link">Вопросы</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+79269292311" class="header__phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span>+7 (926) 929-23-11</span>
+        </a>
+        <a href="tel:+79269292311" class="btn btn--primary btn--sm">Позвонить</a>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid-lines"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <div class="hero__badges"></div>
+        <h1 class="hero__title">
+          <span class="hero__title-line">Монтаж вентиляции</span>
+          <span class="hero__title-line">и&nbsp;дымоходов <em>под ключ</em></span>
+        </h1>
+        <p class="hero__subtitle">
+          Акт ВДПО, протокол заземления и полный пакет документов для газовой службы — 
+          официально, с первого раза.
+        </p>
+        <div class="hero__chips"></div>
+        <div class="hero__actions">
+          <a href="tel:+79269292311" class="btn btn--primary btn--lg">
+            Позвонить
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </a>
+          <a href="#services" class="btn btn--outline btn--lg">Смотреть услуги</a>
+        </div>
+      </div>
+      <div class="hero__aside">
+        <div class="carousel" id="heroCarousel">
+          <div class="carousel__container">
+            <div class="carousel__slide"><div class="carousel__photo"><img src="img/photo-1.jpg" alt="Пример работы"></div></div>
+            <div class="carousel__slide"><div class="carousel__photo"><img src="img/photo-2.jpg" alt="Пример работы"></div></div>
+            <div class="carousel__slide"><div class="carousel__photo"><img src="img/photo-3.jpg" alt="Пример работы"></div></div>
+          </div>
+          <button class="carousel__btn carousel__btn--prev" aria-label="Предыдущий">‹</button>
+          <button class="carousel__btn carousel__btn--next" aria-label="Следующий">›</button>
+          <div class="carousel__dots"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="container">
+        <div class="stats-bar">
+          <div class="stats-bar__item"><span class="stats-bar__num">10+</span><span class="stats-bar__label">лет опыта</span></div>
+          <div class="stats-bar__divider"></div>
+          <div class="stats-bar__item"><span class="stats-bar__num">МЧС</span><span class="stats-bar__label">аккредитация</span></div>
+          <div class="stats-bar__divider"></div>
+          <div class="stats-bar__item"><span class="stats-bar__num">100%</span><span class="stats-bar__label">официальные документы</span></div>
+          <div class="stats-bar__divider"></div>
+          <div class="stats-bar__item"><span class="stats-bar__num">1 год</span><span class="stats-bar__label">гарантия</span></div>
+          <div class="stats-bar__divider"></div>
+          <div class="stats-bar__item"><span class="stats-bar__num">24/7</span><span class="stats-bar__label">консультации</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities strip -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Подольск</span><span>·</span><span>Чехов</span><span>·</span><span>Серпухов</span><span>·</span><span>Домодедово</span><span>·</span><span>Ступино</span><span>·</span><span>Кашира</span><span>·</span><span>Климовск</span><span>·</span><span>Южное Подмосковье</span>
+      <span>Подольск</span><span>·</span><span>Чехов</span><span>·</span><span>Серпухов</span><span>·</span><span>Домодедово</span><span>·</span><span>Ступино</span><span>·</span><span>Кашира</span><span>·</span><span>Климовск</span><span>·</span><span>Южное Подмосковье</span>
+    </div>
+  </div>
+
+  <!-- Services (исправленная сетка 2×2) -->
+  <section class="services section section--gray" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Наши услуги</h2>
+        <p class="section-desc">Комплексные решения для вашего объекта: монтаж, обслуживание и полное сопровождение для подключения газа</p>
+      </div>
+      <div class="services__grid services__grid--simple">
+        <article class="service-card">
+          <div class="service-card__badge">Популярно</div>
+          <div class="service-card__icon service-card__icon--purple">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <path d="M9 15l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Документы для газовой службы</h3>
+          <p class="service-card__desc">Полный комплект: акт ВДПО, протокол заземления, договор на обслуживание САКЗ</p>
+          <a href="tel:+79269292311" class="service-card__link">Позвонить →</a>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon service-card__icon--blue">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9.59 4.59A2 2 0 1111 8H2m10.59 11.41A2 2 0 1014 16H2m15.73-8.27A2.005 2.005 0 0119 8H2"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Монтаж вентиляции</h3>
+          <p class="service-card__desc">Установка систем вентиляции для частных домов</p>
+          <a href="tel:+79269292311" class="service-card__link">Позвонить →</a>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon service-card__icon--orange">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Установка и подключение дымоходов</h3>
+          <p class="service-card__desc">Монтаж дымоходных систем «под ключ» с соблюдением всех норм безопасности</p>
+          <a href="tel:+79269292311" class="service-card__link">Позвонить →</a>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon service-card__icon--green">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Устройство контура заземления</h3>
+          <p class="service-card__desc">Монтаж заземляющих устройств для газового оборудования с выдачей протокола измерений</p>
+          <a href="tel:+79269292311" class="service-card__link">Позвонить →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section class="documents section" id="documents">
+    <div class="container">
+      <div class="documents__grid">
+        <div class="documents__content">
+          <h2 class="section-title">Пакет документов для подключения газа</h2>
+          <p class="section-desc">
+            Оформляем все необходимые документы установленного образца. 
+            Голограмма защиты, лицензии — всё для успешной сдачи в газовую службу.
+          </p>
+          <ul class="documents__list">
+            <li class="doc-item">
+              <div class="doc-item__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <div>
+                <strong>Акт проверки вентиляционных и дымовых каналов (ВДПО)</strong>
+                <span>Визуальный и приборный метод проверки соответствия требованиям</span>
+              </div>
+            </li>
+            <li class="doc-item">
+              <div class="doc-item__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div>
+                <strong>Протокол измерения сопротивления заземления</strong>
+                <span>Технический отчёт электролаборатории по ПУЭ</span>
+              </div>
+            </li>
+            <li class="doc-item">
+              <div class="doc-item__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+              </div>
+              <div>
+                <strong>Договор на обслуживание САКЗ</strong>
+                <span>Акт выполненных работ на сигнализаторы загазованности</span>
+              </div>
+            </li>
+          </ul>
+          <a href="tel:+79269292311" class="btn btn--primary">Позвонить</a>
+        </div>
+        <div class="documents__visual">
+          <div class="carousel" id="docCarousel">
+            <div class="carousel__container">
+              <div class="carousel__slide">
+                <div class="carousel__photo">
+                  <img src="img/licence_page-0001.jpg" alt="Акт ВДПО">
+                </div>
+              </div>
+              <div class="carousel__slide">
+                <div class="carousel__photo">
+                  <img src="img/lab_page-0001.jpg" alt="Протокол заземления">
+                </div>
+              </div>
+              <div class="carousel__slide">
+                <div class="carousel__photo">
+                  <img src="img/lab_page-0002.jpg" alt="Договор САКЗ">
+                </div>
+              </div>
+            </div>
+            <button class="carousel__btn carousel__btn--prev" aria-label="Предыдущий">‹</button>
+            <button class="carousel__btn carousel__btn--next" aria-label="Следующий">›</button>
+            <div class="carousel__dots"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="partners section" id="partners">
+    <div class="container">
+      <div class="partners__inner">
+        <div class="partners__content">
+          <h2 class="section-title">Открыты к сотрудничеству!</h2>
+          <p>
+            Мы предлагаем взаимовыгодные условия для подрядных организаций, монтажных 
+            и ремонтных бригад, которые постоянно сталкиваются с необходимостью оформления 
+            документов для газификации
+          </p>
+          <ul class="partners__benefits">
+            <li>Скидки партнёрам</li>
+            <li>Быстрое оформление документов</li>
+            <li>Помощь вашим клиентам</li>
+          </ul>
+          <a href="tel:+79269292311" class="btn btn--primary">Позвонить</a>
+        </div>
+        <div class="partners__visual">
+          <div class="partners-card">
+            <div class="partners-card__header">Наше предложение</div>
+            <div class="partners-card__body">
+              <div class="partners-card__stat">
+                <span class="partners-card__value">Скидки партнёрам</span>
+              </div>
+              <div class="partners-card__stat">
+                <span class="partners-card__value">Оформление за 1 день</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header section-header--center">
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq-item">
+          <summary class="faq-item__question">Когда нужен акт ВДПО?</summary>
+          <div class="faq-item__answer"><p>Акт ВДПО необходим при первичном подключении газа, замене газового оборудования, заключении договора на техобслуживание, а также при восстановлении подачи газа после отключения.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Кто может выдавать протокол заземления?</summary>
+          <div class="faq-item__answer"><p>Проверку заземления могут проводить только организации, зарегистрированные в Ростехнадзоре, со специалистами, имеющими IV или V группу допуска к испытаниям. У нас есть свидетельство электролаборатории № 5.3-6395.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">Сколько действуют документы?</summary>
+          <div class="faq-item__answer"><p>Акт ВДПО, протокол заземления и договор на САКЗ действуют 1 год.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__question">В каких городах вы работаете?</summary>
+          <div class="faq-item__answer"><p>Мы работаем по всему южному Подмосковью: Подольск, Чехов, Серпухов, Домодедово, Ступино, Кашира и другие города и посёлки региона.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="contacts section section--gray" id="contacts">
+    <div class="container">
+      <div class="contacts__grid">
+        <div class="contacts__info">
+          <h2 class="section-title">Свяжитесь с нами</h2>
+          <p class="section-desc">Звоните, чтобы получить бесплатную консультацию и расчёт стоимости!</p>
+          <div class="contact-items">
+            <a href="tel:+79269292311" class="contact-item">
+              <div class="contact-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <div><span class="contact-item__label">Телефон</span><strong>+7 (926) 929-23-11</strong></div>
+            </a>
+            <a href="mailto:ust70@list.ru" class="contact-item">
+              <div class="contact-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div><span class="contact-item__label">E-mail</span><strong>ust70@list.ru</strong></div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><span class="contact-item__label">Режим работы</span><strong>Пн–Вс: 9:00 – 18:00</strong></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><span class="contact-item__label">Зона работы</span><strong>Южное Подмосковье</strong></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2" ry="2"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+              <div><span class="contact-item__label">Офис</span><strong>г. Серпухов, ул. Фрунзе, д. 22, офис 15</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer"><span class="logo__text">Про<span class="logo__accent">Вент</span></span></a>
+        <p>Монтаж вентиляции и дымоходов под ключ. Акт ВДПО, протокол заземления для газовой службы.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Услуги</h4>
+        <ul><li><a href="#services">Монтаж вентиляции</a></li><li><a href="#services">Монтаж дымоходов</a></li><li><a href="#services">Заземление</a></li><li><a href="#documents">Документы для газа</a></li></ul>
+      </div>
+      <div class="footer__links">
+        <h4>Партнёрам</h4>
+        <ul><li><a href="#partners">Сотрудничество</a></li><li><a href="#partners">Условия</a></li></ul>
+      </div>
+      <div class="footer__links">
+        <h4>Помощь</h4>
+        <ul><li><a href="#contacts">Контакты</a></li><li><a href="#faq">Вопросы</a></li></ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Контакты</h4>
+        <a href="tel:+79269292311">+7 (926) 929-23-11</a>
+        <a href="mailto:ust70@list.ru">ust70@list.ru</a>
+        <span>г. Серпухов, ул. Фрунзе, д. 22, офис 15</span>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 ПроВент. Все права защищены.</p>
+        <div>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="terms.html">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a href="tel:+79269292311" class="float-phone" aria-label="Позвонить">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+    </svg>
+  </a>
+
+  <!-- Mobile bottom bar -->
+  <div class="mobile-bar" id="mobileBar">
+    <a href="tel:+79269292311" class="mobile-bar__btn mobile-bar__btn--call"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Позвонить</a>
+    <a href="tel:+79269292311" class="mobile-bar__btn mobile-bar__btn--cta">Позвонить</a>
+  </div>
+
+  <!-- Cookie consent banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__content">
+      <p>Мы используем файлы cookie для улучшения работы сайта. Продолжая использовать наш сайт, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+      <div class="cookie-banner__buttons">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">Принять</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Отклонить</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
