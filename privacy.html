@@ -3,56 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Политика конфиденциальности сайта provent.online — ИП Устинов Павел Николаевич.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://provent.online/privacy.html">
   <title>Политика конфиденциальности — ПроВент</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    body { background: var(--bg); padding-top: calc(var(--header-h) + 40px); }
-    .legal-page { max-width: 800px; margin: 0 auto 80px; padding: 0 20px; }
-    .legal-page h1 { font-family: var(--font-display); font-size: 32px; margin-bottom: 24px; }
-    .legal-page h2 { font-size: 22px; margin-top: 32px; margin-bottom: 12px; }
-    .legal-page p, .legal-page li { line-height: 1.6; color: var(--text-muted); margin-bottom: 12px; }
-    .legal-page ul { margin-left: 24px; margin-bottom: 20px; }
-    .back-link { display: inline-block; margin-top: 40px; color: var(--accent); text-decoration: underline; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script type="text/javascript">
+    /* Счётчик Яндекс.Метрики подключается ТОЛЬКО этой функцией — она не вызывается
+       сама по себе. main.js запускает её лишь после нажатия "Принять" в cookie-баннере
+       (или сразу при заходе, если согласие уже было дано ранее). */
+    window.initYandexMetrika = function () {
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110060167', 'ym');
+      ym(110060167, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    };
+  </script>
 </head>
 <body>
-  <div class="container legal-page">
-    <h1>Политика конфиденциальности</h1>
-    <p>Настоящая Политика конфиденциальности описывает, как ИП Павел (далее — «Компания», «мы», «нас») собирает, использует и защищает информацию, которую вы предоставляете при использовании сайта <strong>provent.ru</strong>.</p>
-    
-    <h2>1. Какие данные мы собираем</h2>
-    <p>При обращении через телефон, email или мессенджеры мы можем собирать:</p>
-    <ul>
-      <li>Ваше имя и контактные данные (телефон, email);</li>
-      <li>Информацию о вашем объекте (тип строения, необходимость монтажа вентиляции/дымоходов);</li>
-      <li>Технические данные (IP-адрес, тип браузера, cookies) – для улучшения работы сайта.</li>
-    </ul>
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
 
-    <h2>2. Как мы используем ваши данные</h2>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__text">Про<span class="logo__accent">Вент</span></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html#services" class="nav__link">УСЛУГИ</a></li>
+          <li><a href="index.html#documents" class="nav__link">ДОКУМЕНТЫ</a></li>
+          <li><a href="index.html#partners" class="nav__link">ПАРТНЁРАМ</a></li>
+          <li><a href="index.html#faq" class="nav__link">ВОПРОСЫ</a></li>
+          <li><a href="index.html#reviews" class="nav__link">ОТЗЫВЫ</a></li>
+          <li><a href="index.html#contacts" class="nav__link">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+79269292311" class="header__phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span>+7 (926) 929-23-11</span>
+        </a>
+        <a href="tel:+79269292311" class="btn btn--primary btn--sm">ПОЗВОНИТЬ</a>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container legal-page reveal">
+    <h1>Политика конфиденциальности</h1>
+    <p>Настоящая Политика описывает, как ИП Устинов Павел Николаевич (далее — «Компания», «мы») подходит к работе с информацией посетителей сайта <strong>provent.online</strong>, в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и действующими требованиями к использованию файлов cookie.</p>
+
+    <h2>1. Мы не собираем и не храним персональные данные через сайт</h2>
+    <p>На сайте нет форм обратной связи, регистрации или личного кабинета. Указанные на сайте телефон и e-mail — это прямые каналы связи: когда вы звоните или пишете нам, это происходит через приложения вашего телефона или почтового клиента, а не через сайт. Сайт не передаёт, не записывает и не хранит на своих серверах ваше имя, номер телефона, адрес или содержание обращения.</p>
+    <p>Если по итогам обращения заключается договор на услуги, дальнейшая обработка данных (например, для оформления акта ВДПО или протокола заземления) ведётся отдельно от сайта, в рамках исполнения договора и требований законодательства.</p>
+
+    <h2>2. Файлы cookie и Яндекс.Метрика</h2>
+    <p>Для оценки посещаемости сайт использует Яндекс.Метрику, которая устанавливает аналитические cookie (в том числе <em>_ym_uid</em>, <em>_ym_d</em>). Эти файлы не содержат вашего имени или контактов и используются в обезличенном виде — для статистики переходов и поведения на сайте.</p>
     <ul>
-      <li>Для предоставления услуг и консультаций;</li>
-      <li>Для связи с вами по вопросам заявок;</li>
-      <li>Для улучшения качества обслуживания;</li>
-      <li>Для соблюдения требований законодательства (в том числе для выдачи актов ВДПО, протоколов заземления).</li>
+      <li>Счётчик Яндекс.Метрики не запускается автоматически при заходе на сайт;</li>
+      <li>он подключается только после того, как вы нажали «Принять» в баннере о cookie;</li>
+      <li>вы можете нажать «Отклонить» — тогда аналитические cookie не устанавливаются;</li>
+      <li>своё решение можно изменить, очистив данные сайта в браузере — баннер появится снова.</li>
     </ul>
+    <p>Такой порядок соответствует требованиям к получению согласия на использование аналитических cookie, действующим в России с 1 сентября 2025 года: скрипты аналитики не должны загружаться до явного согласия пользователя, а отказ должен быть таким же простым, как и согласие.</p>
 
     <h2>3. Передача данных третьим лицам</h2>
-    <p>Мы не продаём и не передаём ваши персональные данные третьим лицам, за исключением случаев, предусмотренных законом (например, по запросу государственных органов).</p>
+    <p>Мы не продаём и не передаём данные посетителей третьим лицам. Обезличенная статистика Яндекс.Метрики обрабатывается сервисом ООО «Яндекс» в соответствии с его собственной политикой конфиденциальности.</p>
 
-    <h2>4. Срок хранения данных</h2>
-    <p>Ваши данные хранятся не дольше, чем это необходимо для выполнения обязательств по договору, а также в течение сроков, установленных законодательством РФ (для бухгалтерской и налоговой отчётности – до 5 лет).</p>
+    <h2>4. Ваши права</h2>
+    <p>Вы можете в любой момент отозвать согласие на использование аналитических cookie (кнопка «Отклонить» в баннере или очистка данных сайта в браузере), а также задать любой вопрос о работе сайта с данными, написав на <a href="mailto:ust70@list.ru">ust70@list.ru</a>.</p>
 
-    <h2>5. Ваши права</h2>
-    <p>Вы можете запросить удаление ваших данных, уточнить их состав, а также отказаться от получения рекламных материалов, написав нам на почту <a href="mailto:ust70@list.ru">ust70@list.ru</a>.</p>
+    <h2>5. Изменения политики</h2>
+    <p>Мы можем обновлять данную Политику по мере изменения законодательства или функциональности сайта. Актуальная версия всегда доступна на этой странице.</p>
 
-    <h2>6. Изменения политики</h2>
-    <p>Мы можем периодически обновлять данную Политику. Актуальная версия всегда доступна на этой странице.</p>
+    <span class="legal-page__updated">Дата последнего обновления: 23 августа 2026 г.</span>
+    <div>
+      <a href="index.html" class="back-link">← Вернуться на главную</a>
+    </div>
+  </main>
 
-    <p><strong>Дата последнего обновления:</strong> 13 июня 2026 г.</p>
-    <a href="index.html" class="back-link">← Вернуться на главную</a>
+  <footer class="footer">
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 ПроВент. Все права защищены.</p>
+        <div>
+          <a href="privacy.html">Политика конфиденциальности</a>
+          <a href="terms.html">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="tel:+79269292311" class="float-phone" aria-label="Позвонить">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+    </svg>
+  </a>
+
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner__content">
+      <p>Мы используем файлы cookie для улучшения работы сайта. Продолжая использовать наш сайт, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>.</p>
+      <div class="cookie-banner__buttons">
+        <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">Принять</button>
+        <button class="cookie-banner__btn cookie-banner__btn--decline" id="cookieDecline">Отклонить</button>
+      </div>
+    </div>
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
