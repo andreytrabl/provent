@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nav = document.getElementById("nav");
   const burger = document.getElementById("burger");
 
+  // ---------- ротация заголовков в hero (3 варианта, листаются автоматически) ----------
   const rotator = document.querySelector(".hero__title--rotator");
   if (rotator) {
     const lines = [...rotator.querySelectorAll(".hero__title-line")];
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // ---------- лёгкая анимация появления секций при скролле ----------
   const revealTargets = document.querySelectorAll(".reveal");
   if (revealTargets.length && "IntersectionObserver" in window) {
     const io = new IntersectionObserver(
@@ -102,6 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .querySelector(".carousel__btn--next")
       ?.addEventListener("click", () => go(carouselIndex + 1));
 
+    // свайп для тач-устройств (мобильные)
     const container = carousel.querySelector(".carousel__container");
     let touchStartX = 0,
       touchDeltaX = 0,
@@ -130,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
       else if (touchDeltaX < -40) go(carouselIndex + 1);
     });
 
+    // клик по фото — открыть лайтбокс с этим документом
     carousel.querySelectorAll(".carousel__photo").forEach((btn, k) => {
       btn.addEventListener("click", () => openLightbox(k));
     });
@@ -167,6 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "ArrowRight") stepLightbox(1);
   });
 
+  // свайп в самом лайтбоксе
   let lbStartX = 0,
     lbDeltaX = 0,
     lbTouching = false;
@@ -194,6 +199,9 @@ document.addEventListener("DOMContentLoaded", () => {
     else if (lbDeltaX < -40) stepLightbox(1);
   });
 
+  // ---------- cookie-баннер + запуск Яндекс.Метрики только после согласия ----------
+  // Метрика (window.initYandexMetrika) объявлена в index.html, но НЕ запускается сама —
+  // до нажатия "Принять" счётчик не подключается вовсе (ни один запрос на mc.yandex.ru).
   const consent = localStorage.getItem("cookieConsent");
   if (consent === "accepted") {
     window.initYandexMetrika?.();
