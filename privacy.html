@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <script type="text/javascript">
+      /* Счётчик Яндекс.Метрики подключается ТОЛЬКО этой функцией — она не вызывается
+       сама по себе. main.js запускает её лишь после нажатия "Принять" в cookie-баннере
+       (или сразу при заходе, если согласие уже было дано ранее). */
       window.initYandexMetrika = function () {
         (function (m, e, t, r, i, k, a) {
           m[i] =
